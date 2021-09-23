@@ -1,0 +1,17 @@
+
+
+open System
+
+let SumasSucesivas m n =
+    
+    let mutable resultado = 0
+    for i = 1 to n do
+        resultado <- resultado + m
+    resultado
+
+[<EntryPoint>]
+let main argv = 
+    let  producto=SumasSucesivas 5 3
+    printfn "Valor de producto:5*3 = %i"producto
+    Console.ReadKey() |>ignore
+    0 // return an integer exit code
